@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./assets/img/Untitled (1024 x 1024 px).svg">
+<title>Play Ancient Quest - The Game</title>
+<meta name="description" content="Play Ancient Quest, a fast-paced adventure game. Collect orbs, avoid hazards, and climb the leaderboard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html" aria-label="Home"><span>Ancient Quest</span></a>
+    <div class="menu" data-nav-menu>
+      <a href="index.html" >Home</a>
+      <a href="game.html" class="active">Play Game</a>
+      <a href="leaderboard.html" >Leaderboard</a>
+      <a href="about.html" >About</a>
+      <a href="blog.html" >Blog</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="privacy.html" >Privacy</a>
+      <a href="terms.html" >Terms</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="right">
+      <a class="btn ghost" data-nav-toggle>Menu</a>
+      <a class="btn" href="game.html">Play</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>The Ancient Quest Game</h1>
+    <p>Controls: Use ◀ ▶ or A/D to Move. Press 'P' to Pause, or 'R' to Restart. Collect ⚡ orbs and avoid ✖ hazards.</p>
+    <div class="kudos">
+      <span class="pill">Slow-Mo</span>
+      <span class="pill">Shield</span>
+      <span class="pill">Combo Multiplier</span>
+      <span class="pill">Local Leaderboard</span>
+    </div>
+  </div>
+</header>
+
+<section class="section container">
+  <div class="card game-card">
+    <canvas id="quantum-canvas" width="900" height="520"></canvas>
+    <div class="spacer-12"></div>
+    <div>
+      <button class="btn" id="qd-pause">Pause</button>
+      <button class="btn" id="qd-restart">Save score & Restart</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2025 Ancient Quest. All rights reserved.</div>
+    <div class="footer-badges">
+      <span class="badge">Responsive • Age-gate</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/game.js"></script>
+</body>
+</html>
