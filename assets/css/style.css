@@ -146,3 +146,41 @@ display:inline-block;padding:6px 10px;border-radius:999px;}
 
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .footer-badges{display:flex;gap:12px;align-items:center}
+/* FULLSCREEN BACKGROUND IMAGE */
+/* body keeps the gradient/bg colour defined earlier unless an image container
+   is injected; the transparent rule used to wipe out the gradient even on
+   pages that don't have the image div.  Remove it so every page still has a
+   sensible backdrop. */
+/* body{
+  background:transparent;
+} */
+
+#fullscreen-bg-image{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-image:url('../img/mob.png');
+}
+
+@media (min-width:1024px){
+  #fullscreen-bg-image{
+    background-image:url('../img/lap.png');
+  }
+}
+
+/* RESPONSIVE */
+@media(max-width:980px){
+  .hero .grid,
+  .grid-2,
+  .grid-3,
+  .blog-grid{
+    grid-template-columns:1fr
+  }
+}
+
